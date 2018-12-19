@@ -1,5 +1,5 @@
 # coding=utf-8
-"""Advent of Code 2018, Day 8"""
+"""Advent of Code 2018, Day 9"""
 
 import collections
 import re
