@@ -21,6 +21,7 @@ def part_two():
     tasks = {}
     current_time = 0
     while G.nodes():
+        # noinspection PyCallingNonCallable
         candidate_next_tasks = [task for task in G.nodes()
                                 if task not in tasks.keys() and G.in_degree(task) == 0]
         if candidate_next_tasks and len(tasks) < 5:
@@ -33,6 +34,3 @@ def part_two():
             tasks = {k: v - min_task_time for k, v in tasks.items() if k != completed_task}
             G.remove_node(completed_task)
     return current_time
-
-print(part_one())
-print(part_two())
