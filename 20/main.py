@@ -37,5 +37,5 @@ def part_one():
 
 
 def part_two():
-    """Solution to Part 1"""
+    """Solution to Part 2"""
     return len([d for d in distances.values() if d >= 1000])
